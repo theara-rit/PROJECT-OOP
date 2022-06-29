@@ -1,7 +1,16 @@
-import { MenuItem } from "./menuItem";
+import { ItemType } from "./typeOfItem";
 
 export class Item  {
-  protected name: string;
-  protected price: number;
-  constructor(name: string, price: number){}
+ 
+  constructor( protected name: string,protected price: number, protected itemType: ItemType){
+   
+  }
+  getPrice(){
+    return this.price;
+  }
+
+  getItemName(){
+    return this.name;
+  }
+  
 }

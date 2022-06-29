@@ -1,3 +1,4 @@
+import { Gender, Person } from "../Person";
 
 export class Staff extends Person{
    private salary: number;
@@ -6,15 +7,11 @@ export class Staff extends Person{
    }
    
    getSalary(){
-      
+      return this.salary;
    }
 
-   setSalary(){
-
-   }
-
-   getCategory(){
-
+   setSalary(number: number){
+      this.salary = number;
    }
 
 }

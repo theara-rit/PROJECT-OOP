@@ -1,8 +1,9 @@
-enum Gender {
-    FEMALE,
-    MALE,
+
+export enum Gender {
+    FEMALE="Female",
+    MALE="Male",
 }
-class Person {
+export class Person {
     constructor(
         protected name: string,
         protected age: number,

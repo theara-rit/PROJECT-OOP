@@ -1,10 +1,10 @@
-import { Order } from "../order";
-import { MenuItem } from "./menuItem";
-
+import { Item } from "./item";
 export class Menu {
-    push(menu: Menu): MenuItem[] {
-        throw new Error("Method not implemented.");
+    items:Item[] = [];
+
+    addItem (item:Item){
+        return this.items.push(item);
     }
-    menuItem : MenuItem[]=[];
-    order : Order[]=[];
+
+    
 }
